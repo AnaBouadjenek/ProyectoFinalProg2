@@ -20,16 +20,20 @@ namespace SistemaEscolar
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            ProgressBar.Value = ProgressBar.Value + 1;
-            if (ProgressBar.Value == ProgressBar.Maximum)
-            {
-                Timer.Stop();
+            Timer.Stop();
+            new MainMenuForm().Show();
+            Hide();
+            // TODO: Reset
+            //ProgressBar.Value = ProgressBar.Value + 1;
+            //if (ProgressBar.Value == ProgressBar.Maximum)
+            //{
+            //    Timer.Stop();
 
-                LoginForm loginForm = new LoginForm();
-                loginForm.Show();
+            //    LoginForm loginForm = new LoginForm();
+            //    loginForm.Show();
 
-                this.Hide();
-            }
+            //    Hide();
+            //}
         }
     }
 }
