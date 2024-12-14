@@ -39,5 +39,11 @@ namespace SistemaEscolar
             CasaDeCambioForm casaDeCambioForm = new CasaDeCambioForm();
             casaDeCambioForm.ShowDialog();
         }
+
+        private void NominaSemanalMenuItem_Click(object sender, EventArgs e)
+        {
+            NominaSemanalForm nominaSemanalForm = new NominaSemanalForm();
+            nominaSemanalForm.ShowDialog();
+        }
     }
 }

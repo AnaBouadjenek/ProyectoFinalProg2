@@ -72,6 +72,12 @@
     <Compile Include="Tools\CasaDeCambioForm.Designer.cs">
       <DependentUpon>CasaDeCambioForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tools\NominaSemanalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\NominaSemanalForm.Designer.cs">
+      <DependentUpon>NominaSemanalForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tools\LaSumadoraForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tools\CasaDeCambioForm.resx">
       <DependentUpon>CasaDeCambioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\NominaSemanalForm.resx">
+      <DependentUpon>NominaSemanalForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tools\LaSumadoraForm.resx">
       <DependentUpon>LaSumadoraForm.cs</DependentUpon>
