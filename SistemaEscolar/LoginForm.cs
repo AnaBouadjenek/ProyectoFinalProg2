@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ namespace SistemaEscolar
 {
     public partial class LoginForm : Form
     {
+        DatabaseConnection conn = new DatabaseConnection();
+     
         public LoginForm()
         {
             InitializeComponent();
@@ -23,12 +26,17 @@ namespace SistemaEscolar
             string user = UserTextBox.Text;
             string pass = PasswordTextBox.Text;
 
-            if (user == "admin" && pass == "admin")
+            if (conn.Login(user, pass))
             {
                 MainMenuForm mainMenu = new MainMenuForm();
                 mainMenu.Show();
                 
-                this.Close();
+                Close();
+            } else
+            {
+                MessageBox.Show("Usuario incorrecto");
+                UserTextBox.Focus();
+                PasswordTextBox.Clear();
             }
         }
 

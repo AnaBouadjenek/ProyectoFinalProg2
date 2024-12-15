@@ -52,7 +52,6 @@ namespace SistemaEscolar.Tools
             }
             Salario = HN + HE;
             textBox8.Text = Salario.ToString();
-
         }
     }
 }
